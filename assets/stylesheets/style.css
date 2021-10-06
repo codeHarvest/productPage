@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&family=Encode+Sans+Expanded:wght@200&display=swap');
+
+/*-------------common styles------------*/
+
+:root{
+  --biryani: 'Averia Sans Libre', cursive;
+  --text: 'Encode Sans Expanded', sans-serif;
+  font-size: 10px;
+}
+
+
+.margin{
+  margin: 8rem 0;
+}
+
+
+/*-----------container-------------*/
+
+.container{
+  position: relative;
+}
+
+/*------- header ------*/
+
+/* header{
+background: url("https://images.unsplash.com/photo-1630851840633-f96999247032?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80") no-repeat center center;
+height: 20vmax;
+} */
+
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  height: 8rem;
+  padding: 0 2rem;
+  align-items: center;
+  background-color: #fee;
+}
+
+/*------- logo --------*/
+
+.logo img{
+  width: 16rem;
+  height: 13rem;
+  border-radius: 50%;
+  margin-top: 4rem;
+}
+
+/*-------- navbar -------*/
+
+.nav{
+  display: flex;
+}
+
+.link{
+  padding: 0 1rem;
+}
+
+.nav-link{
+  color: black;
+  font-family: var(--text);
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+/*-------- form ---------*/
+
+.contact-container{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+  justify-content: center;
+}
+
+.tagline{
+  font-size:4rem;
+  font-family: var(--text);
+  font-weight: bold;
+}
+
+
+.form-container{  
+  font-size: 1.6rem;
+}
+
+#form{
+  margin-bottom: 3rem;
+}
+
+.label-email input{
+    outline: none;
+    width: 24rem;
+    padding: 1rem;
+    margin: 1.5rem 0 0 0;
+}
+
+.label-submit input{
+    cursor: pointer;
+    width: 12rem;
+    height: 3.9rem;
+    color: var(--white);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: transparent;
+    border-radius: 2px;
+    border: 1.5px solid rgba(0, 0, 0, .5);
+    font-size: 1.5rem;
+    font-family: var(--biryani);
+}
+
+input::placeholder{
+  font-family: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+
+/*----------section heading------------*/
+
+.section-heading{
+  text-align: center;
+  font-size: 4rem;
+  border-bottom: 2px solid #bada55;
+}
+
+
+/*------- recipe sections ---------*/
+
+.items-title{
+  text-transform : uppercase; 
+  font-size: 3rem;
+}
+
+
+.blob{
+  margin-left: 1rem;
+  font-family: var(--biryani)
+}
+
+
+/*---------- recipe cards -----------*/
+
+
+#Products{
+  display: flex;
+  justify-content: center;
+}
+
+.items{
+  margin:0 1.3rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+
+.items-title{
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: var(--biryani);
+}
+
+.list-items{
+  font-family: var(--text);
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+
+ ol.list{
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+
+/*-------- recipe video  --------*/
+
+
+.video-conatiner{
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+#video{
+  max-width: 100%;
+  height: 370px;
+  width: 650px;
+}
+
+
+
+/*---------pricing-----------*/
+
+
+#Pricing{
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.pricing-cards{
+  width: 420px;
+  font-family: var(--text);
+  font-size: 1.7rem;
+  margin: 0 2rem;
+  text-align: justify;
+  background-color: #ddd;
+}
+
+.top{
+  text-align: center;
+  background-color: #efe;
+}
+.top-heading{
+  padding: 4rem 0;
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.top .fas{
+  margin: 0 0 3rem 0;
+  font-size: 4rem;
+}
+
+.bottom-para{
+  margin-top: 1rem;
+  line-height: 1.4;
+  padding: 2rem ;
+}
+
+
+/*--------------footer------------*/
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  font-family: var(--text);
+}
+
+
+@media (max-width: 1120px){
+  .pricing-cards{
+    margin: 0;
+  }
+}
+
+@media (max-width: 760px){
+
+  .header-top{
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+
+  .nav-top{
+    display:flex;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .logo img{
+    width: 12rem;
+    height: 9rem;
+    border-radius: 50%;
+    margin-top: 1.2rem;
+  }
+
+  .contact{
+    height: 200px;
+  }
+
+  .tagline{
+    font-size: 2.5rem;
+  }
+
+
+  .items-title{
+    font-size: 2.2rem;
+  }
+
+  #Products{
+    flex-direction: column;
+  }
+
+  .items{
+    padding-left: 2rem;
+  }
+
+  #Pricing{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-cards{
+    margin: 2rem;
+    width: 35rem;
+  }
+
+}
+
+
+@media (max-width: 460px){
+  .tagline{
+    font-size: 2.1rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .form-container .label-submit{
+    display: block;
+    margin-top: 1rem;
+  }
+
+  #email{
+    height: 3.8rem;
+    text-align: center;
+    font-size: 1.9rem;
+  }
+  input::placeholder{
+    text-align: center;
+  }
+  .label-email input{
+    width: 24rem;
+    padding: 1rem;
+    margin: 1.5rem 0 0 0;
+}
+
+.label-submit input{
+    width: 24rem;
+}
+}
